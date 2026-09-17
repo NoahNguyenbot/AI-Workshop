@@ -10,6 +10,15 @@ export default function Home() {
 
       <main>
         <section className="section">
+          <h2>This Semester</h2>
+          <ul className="semester-list">
+            <li>SLS 480E</li>
+            <li>my AIR project</li>
+            <li>learning to surf</li>
+          </ul>
+        </section>
+
+        <section className="section">
           <h2>About</h2>
           <p>
             Noah is a Junior at the University of Hawaiʻi at Mānoa, where he
@@ -20,21 +29,13 @@ export default function Home() {
             ideas and skills to explore.
           </p>
         </section>
-
-        <section className="section">
-          <h2>This Semester</h2>
-          <ul className="semester-list">
-            <li>Placeholder: current coursework goes here.</li>
-            <li>Placeholder: a new skill or technology being learned.</li>
-            <li>Placeholder: a project currently being worked on.</li>
-          </ul>
-        </section>
       </main>
 
       <footer className="footer">
         <p>
           Noah Nguyen &middot; {year}
         </p>
+        <p>Built with Claude Code</p>
       </footer>
     </>
   );
