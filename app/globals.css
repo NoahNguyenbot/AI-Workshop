@@ -1,0 +1,114 @@
+:root {
+  --accent: #0f4c4c;
+  --text: #1a1a1a;
+  --muted: #4a4a4a;
+  --background: #ffffff;
+  --border: #e2e2e2;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.semester-list {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.semester-list li {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem 2rem;
+  }
+}
