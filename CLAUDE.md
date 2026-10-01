@@ -11,7 +11,7 @@
 - `npm install` installs dependencies
 - `npm run dev` runs the site locally at http://localhost:3000
 - `npm run build` builds the site the way Vercel will; run it before any pull request
-- `npm run lint` checks code style
+- There is no lint script in package.json yet, so `npm run lint` does not work.
 If package.json lists different script names, the package.json names are correct; say so and update this section.
 
 ## Never
