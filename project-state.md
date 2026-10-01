@@ -4,7 +4,11 @@ Last updated: 2026-10-01
 ## Works
 - Next.js site (App Router, TypeScript, plain CSS) is live on Vercel at https://ai-workshop-wheat.vercel.app/
 - GitHub repo NoahNguyenbot/AI-Workshop exists and is connected to Vercel.
-- A Supabase project exists and is linked to the repo. Slice 1 (sign up, log in, log out) uses Supabase Auth through @supabase/supabase-js; it is on a pull request, not yet merged.
+- A Supabase project exists and is linked to the repo. The site uses it for sign-in through @supabase/supabase-js.
+- On the live site, a person can create an account with an email and a password and is signed in straight away.
+- A signed-in person sees "Signed in as" followed by their email, and stays signed in after closing the tab and opening the site again.
+- A person can log out, which brings back the login form.
+- Logging in with a wrong password shows an error message and keeps the login form on screen.
 
 ## Broken or flaky
 - Nothing known.
