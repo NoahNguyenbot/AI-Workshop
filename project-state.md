@@ -11,7 +11,7 @@ Last updated: 2026-10-01
 
 ## Environment notes
 - Supabase keys belong in .env.local on a local machine and in Vercel under Project Settings, Environment Variables. They never go in chat or in committed files.
-- NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY are set in Vercel (per Noah, 2026-10-01). Not yet confirmed: whether they are set for the Preview environment as well as Production.
+- NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY are set in Vercel for both Production and Preview (per Noah, 2026-10-01).
 - Email confirmation is turned off in Supabase, so a new account is signed in straight away.
 - Supabase's built-in email sender has a low hourly limit. Check the real number under Supabase, Authentication, Rate Limits.
 - Assumed: Vercel redeploys automatically when main changes.
