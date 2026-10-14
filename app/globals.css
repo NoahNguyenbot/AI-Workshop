@@ -171,3 +171,62 @@ main {
     padding: 1.5rem 1rem 2rem;
   }
 }
+
+.task-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 480px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem;
+  font: inherit;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 480px;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.task-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.task-done span {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.auth-panel .task-list button {
+  padding: 0.25rem 0.75rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+}

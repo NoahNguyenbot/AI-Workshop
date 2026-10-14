@@ -3,6 +3,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { getSupabase } from "./supabase-client";
+import TaskList from "./task-list";
 
 export default function AuthPanel() {
   const [session, setSession] = useState<Session | null>(null);
@@ -88,6 +89,7 @@ export default function AuthPanel() {
             {error}
           </p>
         )}
+        <TaskList key={session.user.id} />
       </div>
     );
   }
