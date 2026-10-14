@@ -9,6 +9,11 @@ Last updated: 2026-10-14
 - A signed-in person sees "Signed in as" followed by their email, and stays signed in after closing the tab and opening the site again.
 - A person can log out, which brings back the login form.
 - Logging in with a wrong password shows an error message and keeps the login form on screen.
+- A signed-in person can type a study task and click Add, and it appears in their list.
+- A person can tick a task's checkbox to mark it done, and untick it again.
+- A person can click Delete to remove a task.
+- Tasks, and whether they are ticked, are still there after a reload.
+- Each person sees only their own tasks; a second account cannot see the first account's tasks.
 
 ## Broken or flaky
 - Supabase pauses the free project after a period of no use. When paused, login and sign-up show "Failed to fetch". Fix: Supabase dashboard, open the project, click Restore. Found paused 2026-10-13.
