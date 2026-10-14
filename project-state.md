@@ -1,5 +1,5 @@
 # Project state
-Last updated: 2026-10-01
+Last updated: 2026-10-14
 
 ## Works
 - Next.js site (App Router, TypeScript, plain CSS) is live on Vercel at https://ai-workshop-wheat.vercel.app/
@@ -11,7 +11,7 @@ Last updated: 2026-10-01
 - Logging in with a wrong password shows an error message and keeps the login form on screen.
 
 ## Broken or flaky
-- Nothing known.
+- Supabase pauses the free project after a period of no use. When paused, login and sign-up show "Failed to fetch". Fix: Supabase dashboard, open the project, click Restore. Found paused 2026-10-13.
 
 ## Environment notes
 - Supabase keys belong in .env.local on a local machine and in Vercel under Project Settings, Environment Variables. They never go in chat or in committed files.
@@ -21,5 +21,5 @@ Last updated: 2026-10-01
 - Assumed: Vercel redeploys automatically when main changes.
 
 ## Next session
-- Check slice 1 on the pull request's preview link against its done-criteria, then merge.
-- Then start slice 2, Tasks that stay put, per roadmap.md.
+- Start slice 2, Tasks that stay put, per roadmap.md.
+- Slice 2 needs a tasks table in Supabase with row level security turned on, so each user sees only their own tasks.

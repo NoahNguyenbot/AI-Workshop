@@ -29,6 +29,7 @@ If package.json lists different script names, the package.json names are correct
 - After a change, explain in plain language what changed and why, show the diff, and stop before committing unless the prompt says otherwise.
 - Keep roadmap.md and project-state.md accurate. If work changes what they say, say which lines need updating.
 - Test data uses obviously fake content, such as "Review 20 flashcards".
+- Before opening a pull request, update roadmap.md and project-state.md to match the work in it.
 
 ## Current focus
 See roadmap.md. Work only on the slice marked ACTIVE.
