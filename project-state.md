@@ -25,10 +25,5 @@ Last updated: 2026-10-14
 - Supabase's built-in email sender has a low hourly limit. Check the real number under Supabase, Authentication, Rate Limits.
 - Assumed: Vercel redeploys automatically when main changes.
 
-## In review
-- Slice 2, Tasks that stay put, is built in the pull request "Slice 2" and not yet checked on a preview link. A signed-in person can add a task, tick it, and delete it; tasks are stored in a Supabase table called tasks.
-- The tasks table is created by hand in the Supabase SQL Editor (SQL is in the pull request description), with row level security so each user can read and change only their own rows. Not confirmed run yet.
-
 ## Next session
-- Run the tasks table SQL in Supabase if it has not been run, then check slice 2's done-criteria on the preview link.
-- If all four pass, merge the pull request, mark slice 2 DONE in roadmap.md, make slice 3 ACTIVE, and move the slice 2 lines into Works.
+- Start slice 3, Skill tags and the avoided skill, per roadmap.md.
